@@ -1,14 +1,17 @@
 #CASE STUDY ON
-#ANOMALY DETECTION (GERMAN CREDIT RISK)
+##ANOMALY DETECTION (GERMAN CREDIT RISK)
 
-#Objective of Analysis: 
+###Objective of Analysis: 
 	Minimization of risk and maximization of profit on behalf of the bank.
 
-#Data: 
-	The German Credit Data contains data on 20 variables and the classification whether an applicant is considered a Good or a Bad credit risk for 1000 loan applicants. A predictive model developed on this data is expected to provide a bank manager guidance for making a decision whether to approve a loan to a prospective applicant based on his/her profiles.
+###Data: 
+	The German Credit Data contains data on 20 variables and the classification whether an applicant is considered a Good or a Bad credit risk for 1000 loan applicants.
+	A predictive model developed on this data is expected to provide a bank manager guidance for making a decision whether to approve a loan to a prospective applicant based on his/her profiles.
 
-#Description of Data:
-	Training data consists of credit card applications. The dataset consists of 1000 entries with 20 feature columns and 1 label column. The features are a mix of numeric and categorical types. The original data and the description of individual columns can be found in the UCI data repository. In order to train the anomaly detectors, we will be relying on the 'normal' category (label value = 1) while ignoring the 'risky' category (label value = 2). However, we will be using both categories for evaluating the detector. Each variable description,
+###Description of Data:
+	Training data consists of credit card applications. The dataset consists of 1000 entries with 20 feature columns and 1 label column. The features are a mix of numeric and categorical types. 
+	The original data and the description of individual columns can be found in the UCI data repository. In order to train the anomaly detectors, we will be relying on the 'normal' category (label value = 1) while ignoring the 'risky' category (label value = 2). However, we will be using both categories for evaluating the detector. 
+	Each variable description,
 
 1.	Creditability,
 2.	Account Balance,
@@ -34,7 +37,7 @@
 
 
 
-#Algorithm Used:
+###Algorithm Used:
 
 •	PCA – Principal component analysis:
 Linear dimensionality reduction using Singular Value Decomposition of the data to project it to a lower dimensional space. Basically pca used to pre-process the data.
@@ -43,10 +46,10 @@ A multivariate normal distribution or multivariate Gaussian distribution is a ge
 
 •	Logistic Regression (A way for binary classification)
 
-#Work Flow:
+###Work Flow:
 ![Workflow](https://github.com/PoojaKalange/AnomalyDetection/blob/master/WorkFlow.PNG)
 
-#Basic Visualization of Data:
+###Basic Visualization of Data:
 
 1. Normal & Risky data for German credit dataset:
 ![Normal & Risky Data](https://github.com/PoojaKalange/AnomalyDetection/blob/master/Normal%20%26%20Risky%20Data.PNG)
@@ -86,7 +89,7 @@ Evaluate Anomaly detectors can be evaluated on the same metrics as binary classi
  
 
 
-#Conclusions:
+##Conclusions:
 PCA is a method for multivariate data analysis and it is used in many fields to extract relevant information from confusing data sets. Also, PCA provides a way of identifying patterns in data, and of expressing the data in a way that highlights their similarities and differences between them.
  An advantage of using PCA consists in quantifying the importance of each dimension for describing the variability of a data set. This method reduces the number of dimensions, without much loss of information. 
 PCA is preferable for large scale data.
